@@ -29,7 +29,15 @@ chuleta(){
 
 #Chuletas
 
-chuletagit(){
+chuletadyndns(){
+echo -e "$RED 
+Chuletas para configurar el dyndns con OVH
+	
+$GREEN Forzar la renovación de la IP desde el cliente
+$RESTORE -> sudo ddclient -force	
+}
+
+chuletagit(){	
 echo -e "$RED 
 Chuletas para git
 	
@@ -175,10 +183,10 @@ echo -e "$RED
 $GREEN Para añadir a un archivo la salida de un comando:
 $RESTORE -> >> miarchivo.yaml
 
-
-
 "
 }
+
+
 
 #TODO
 # chuletatemperatura
