@@ -202,6 +202,22 @@ $RESTORE -> >> miarchivo.yaml
 "
 }
 
+chuletassl(){
+	echo -e "
+	
+	$GREEN Visualizar los días de expiración que quedan a nuestro certificado letsencrypt
+	$RESTORE -> echo | openssl s_client -servername www.yourdomain.com -connect yourdomain:443 | openssl x509 -noout -dates
+	$RED Cuidado porque los datos tardarán en acutalizarse una vez renovado
+
+	$GREEN Comando docker-compose para renovar el certificado
+	$RESTORE -> command: certonly --webroot --webroot-path=/var/www/html --email youremail@mail.com
+	--agree-tos --no-eff-email --force-renewal -d yourdomain.com -d www.yourdomain.com
+	$LMAGENTA Donde el path es el volumen interno del bot certbot que comunica con el
+	path donde están desplegada la web, por ejemplo /dist
+	"
+
+}
+
 
 
 #TODO
