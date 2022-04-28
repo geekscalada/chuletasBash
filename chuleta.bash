@@ -219,12 +219,27 @@ chuletassl(){
 }
 
 
+chuletadocker(){
+	echo -e "
+	
+	$GREEN Visualizar los logs de un contenedor
+	$RESTORE -> sudo docker logs nombreDelContenedor/ID
+	zarse una vez renovado
+
+	$GREEN Borrar los logs de un contenedor
+	$RESTORE -> sudo truncate -s 0 \$(sudo docker inspect --format='{{.LogPath}}' nombreDelContenedor)
+	
+	"
+
+}
+
+
 
 #TODO
 # chuletatemperatura
 # chuletausuarios
 # chuleta apt
-# chuleta docker
+# chuleta docker [a medias]
 # chuleta vncserver
 # chuleta angular
 # chuleta npm
