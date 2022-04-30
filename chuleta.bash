@@ -234,6 +234,29 @@ chuletadocker(){
 }
 
 
+chuletadotnet(){
+	echo -e "
+	
+	$GREEN Listar plantillas de proyectos definidos que podemos levantar
+	$RESTORE -> dotnet new --list
+
+	$GREEN levantar por ejemplo una plantilla webapi
+	$RESTORE -> dotnet new webapi
+
+	$GREEN Levantar el proyecto web
+	$RESTORE -> dotnet run (dentro de la carpeta)
+	$LMAGENTA Se levantará en: http://www.yourdomain.com:5037/swagger/
+	Es importante definir una ruta de escucha 0.0.0.0. en el archivo 
+	launchsettings.json -> \"applicationUrl\": \"http://0.0.0.0:5037\"
+    
+      
+    
+	
+	"
+
+}
+
+
 
 #TODO
 # chuletatemperatura
