@@ -262,6 +262,15 @@ chuletacertbot(){
 	"
 }
 
+chuletaangular(){
+	echo -e "
+	$GREEN Comandos deploy
+	$RESTORE ng build
+ 	$RESTORE 1335  ng serve --host 0.0.0.0 --port 4202
+	"
+}
+
+
 
 
 #TODO
