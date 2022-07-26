@@ -247,13 +247,19 @@ chuletadotnet(){
 	$RESTORE -> dotnet run (dentro de la carpeta)
 	$LMAGENTA Se levantará en: http://www.yourdomain.com:5037/swagger/
 	Es importante definir una ruta de escucha 0.0.0.0. en el archivo 
-	launchsettings.json -> \"applicationUrl\": \"http://0.0.0.0:5037\"
-    
-      
+	launchsettings.json -> \"applicationUrl\": \"http://0.0.0.0:5037\"       
     
 	
 	"
 
+}
+
+chuletacertbot(){
+	echo -e	"
+	$GREEN Renovar certificado SSL con certbot en letsencrypt en docker, comando para docker-compse
+	$RESTORE command: certonly --webroot --webroot-path=/var/www/html --email yourmail@mail.com --agree-tos --no-eff-email --force-renewal -d yourdomain.com -d www.yourdomain.com
+	
+	"
 }
 
 
