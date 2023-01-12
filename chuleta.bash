@@ -282,6 +282,18 @@ chuletaangular(){
 	"
 }
 
+chuletaDNSraspberry(){
+	echo -e "
+	$LBLUE*** Si no podemos hacer ping www.google.es o curl www.google.es es posible que tengamos que modificar nuestro DNS.
+	$RESTORE -> Podemos cambiar el arcivo /etc/resolv.conf pero solamente
+	funcionará hasta el próximo reincio.
+	Resolv.conf se autogenera con la información de /etc/dhcpcd.conf
+
+	Cambiamos en el archivo $GREEN /etc/dhcpcd.conf $RESTORE la linea:
+	$GREEN static domain_name_servers=8.8.4.4 8.8.8.8
+	"
+}
+
 
 
 
